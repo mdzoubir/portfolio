@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zoubir Med - Portfolio</title>
+    <meta name="keywords" content="Portfolio">
+    <meta name="author" content="MohamedZoubir">
+    <meta name="email" content="mohamed.zoubir.dev@gmail.com">
+    <meta name="version" content="1.0">
+    <!-- favicon -->
+    <link href="{% static 'main/fav-icon/mohamed-zoubir-favicon-color.png' %}" rel="shortcut icon">
+
+    <!-- Css -->
+    <link href="{% static 'main/libs/tobii/css/tobii.min.css' %}" rel="stylesheet">
+    <!-- Main Css -->
+    <link href="{% static 'main/libs/@mdi/font/css/materialdesignicons.min.css' %}" rel="stylesheet" type="text/css'">
+    <link rel="stylesheet" href="{% static 'main/css/tailwind.css' %}">
+
+</head>
+
+<body class="font-poppins text-[15px] text-slate-900 dark:text-white dark:bg-slate-900">
+<!-- Loader Start -->
+<div id="preloader">
+    <div id="status">
+        <div class="logo">
+            <img src="{% static 'main/fav-icon/mohamed-zoubir-favicon-black.png' %}"
+                 class="d-block mx-auto animate-[spin_15s_linear_infinite]" alt="">
+        </div>
+        <div class="justify-content-center">
+            <div class="text-center">
+                <h4 class="mb-0 mt-2 text-lg font-semibold">
+                    <img src="{% static 'main/logo/logo-transparent.png' %}"
+                         class="d-block mx-auto w-52" alt="">
+
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Loader End -->
+{% include 'main/includes/navbar.html' %}
+{% block content %}{% endblock %}
+{% include 'main/includes/footer.html' %}
+
+<!-- JAVASCRIPTS -->
+<script src="{% static 'main/libs/shufflejs/shuffle.min.js' %}"></script>
+<script src="{% static 'main/libs/tobii/js/tobii.min.js' %}"></script>
+<script src="{% static 'main/libs/feather-icons/feather.min.js' %}"></script>
+<script src="{% static 'main/js/plugins.init.js' %}"></script>
+<script src="{% static 'main/js/app.js' %}"></script>
+<!-- JAVASCRIPTS -->
+</body>
+</html>
