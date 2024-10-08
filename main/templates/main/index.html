@@ -1,9 +1,17 @@
 {% extends 'main/includes/base.html' %}
 {% load static %}
+{% block style %}
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+{% endblock %}
 {% block content %}
 
     <!-- Start Hero -->
-    <section class="relative overflow-hidden md:flex md:h-screen py-36 items-center bg-gray-50 dark:bg-slate-800">
+    <section id="home"
+             class="relative overflow-hidden md:flex md:h-screen py-36 items-center bg-gray-50 dark:bg-slate-800">
         <div class="container relative">
             <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
                 <div class="">
@@ -57,7 +65,7 @@
     <!-- End Hero -->
 
     <!-- Start -->
-    <section class="relative overflow-hidden md:py-24 py-16">
+    <section id="about" class="relative overflow-hidden md:py-24 py-16">
         <div class="container relative md:pb-24 pb-16">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
                 <div class="lg:col-span-5 md:col-span-6">
@@ -131,13 +139,11 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <!--grid-->
         </div><!--end container-->
 
-        <div class="container relative md:mt-24 mt-16">
+        <div id="service" class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-6 text-center">
                 <h3 class="mb-6 md:text-2xl text-xl font-medium">What I do</h3>
                 <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
@@ -268,7 +274,7 @@
         </div>
 
 
-        <div class="container relative md:mt-24 mt-16">
+        <div id="projects" class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-6 text-center">
                 <h3 class="mb-6 md:text-2xl text-xl font-medium">My Projects</h3>
 
@@ -304,15 +310,19 @@
                 <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["backend", "frontend"]'>
                     <div class="group relative block rounded-xl duration-700 ease-in-out">
                         <div class="relative overflow-hidden rounded-xl">
-                            <a target="_blank" href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/" class="lightbox">
+                            <a target="_blank" href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/"
+                               class="lightbox">
                                 <img src="{% static 'main/projects/recieps.jpeg' %}" class="rounded-xl" alt="">
                             </a>
                         </div>
                         <div class="content duration-700 ease-in-out">
                             <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
-                                <a href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/" target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Recipes Dashboard</a>
-                                <p><a target="_blank" href="https://github.com/Fatima-Ezzahra-Zahid/recipes_food" class="text-slate-400 dark:text-white/60 mb-0">Git hub</a></p>
+                                <a href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/"
+                                   target="_blank"
+                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Recipes
+                                    Dashboard</a>
+                                <p><a target="_blank" href="https://github.com/Fatima-Ezzahra-Zahid/recipes_food"
+                                      class="text-slate-400 dark:text-white/60 mb-0">Git hub</a></p>
                             </div>
                         </div>
                     </div>
@@ -327,8 +337,10 @@
                         <div class="content duration-700 ease-in-out">
                             <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
                                 <a href="https://github.com/mdzoubir/diidasko" target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">School APi</a>
-                                <p><a target="_blank" href="https://github.com/mdzoubir/diidasko" class="text-slate-400 dark:text-white/60 mb-0">Git hub</a></p>
+                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">School
+                                    APi</a>
+                                <p><a target="_blank" href="https://github.com/mdzoubir/diidasko"
+                                      class="text-slate-400 dark:text-white/60 mb-0">Git hub</a></p>
                             </div>
                         </div>
                     </div>
@@ -352,10 +364,7 @@
             </div>
         </div><!--end container-->
 
-
-
-
-        <div class="container relative md:mt-24 mt-16">
+        <div id="contact" class="container relative md:mt-24 mt-16">
             <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                 <img src="{% static 'main/images/contact.svg' %}" alt="">
 
@@ -409,8 +418,6 @@
     </section><!--end section-->
     <!-- End -->
 
-
-
     <!-- Back to top -->
     <a href="#" onclick="topFunction()" id="back-to-top"
        class="back-to-top fixed hidden text-lg rounded-xl z-10 bottom-5 end-5 h-8 w-8 text-center bg-orange-500 hover:bg-orange-600 text-white leading-9 justify-center items-center duration-500"><i
@@ -430,4 +437,8 @@
             </span>
     </div>
     <!-- Switcher -->
+{% endblock %}
+
+{% block script %}
+    <script></script>
 {% endblock %}

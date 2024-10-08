@@ -17,7 +17,7 @@
     <!-- Main Css -->
     <link href="{% static 'main/libs/@mdi/font/css/materialdesignicons.min.css' %}" rel="stylesheet" type="text/css'">
     <link rel="stylesheet" href="{% static 'main/css/tailwind.css' %}">
-
+    {% block style %}{% endblock %}
 </head>
 
 <body class="font-poppins text-[15px] text-slate-900 dark:text-white dark:bg-slate-900">
@@ -51,5 +51,6 @@
 <script src="{% static 'main/js/plugins.init.js' %}"></script>
 <script src="{% static 'main/js/app.js' %}"></script>
 <!-- JAVASCRIPTS -->
+{% block script %}{% endblock %}
 </body>
 </html>
