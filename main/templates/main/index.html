@@ -1,5 +1,6 @@
 {% extends 'main/includes/base.html' %}
 {% load static %}
+{% load i18n %}
 {% block style %}
     <style>
         .navigation-menu .sub-menu-item.active {
@@ -15,29 +16,33 @@
 {% endblock %}
 {% block content %}
 
+
+
     <!-- Start Hero -->
     <section id="home"
              class="relative overflow-hidden md:flex md:h-screen py-36 items-center bg-gray-50 dark:bg-slate-800">
         <div class="container relative">
             <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
-                <div class="">
-                    <h5 class="font-semibold leading-normal text-[20px] mt-6">Hi, I'm <span class="typewrite"
-                                                                                            data-period="2000"
-                                                                                            data-type='[ "Mohamed Zoubir", "Freelancer", "Full-stack developer", "Front-end Developer", "Back-end Developer" ]'> <span
-                            class="wrap"></span> </span></h5>
+                <div>
+                    <h5 class="font-semibold leading-normal text-[20px] mt-6">
+                        {% trans "Hi, I'm" %} <span class="typewrite" data-period="2000"
+                                                    data-type='[ "Mohamed Zoubir", "Freelancer", "Full-stack developer", "Front-end Developer", "Back-end Developer" ]'>
+                        <span class="wrap"></span>
+                    </span>
+                    </h5>
 
-                    <h5 class="md:text-5xl md:leading-normal text-3xl leading-normal font-bold mt-3">A Full-Stack <br>
-                        Developer </h5>
+                    <h5 class="md:text-5xl md:leading-normal text-3xl leading-normal font-bold mt-3">
+                        {% trans "A Full-Stack Developer" %}
+                    </h5>
 
                     <p class="text-slate-400 dark:text-white/60 text-[17px] max-w-xl mt-4">
-                        Hi! I'm Mohamed, a Fullstack Web Developer based in Morocco. I create user-friendly interfaces
-                        for fast-growing startups.
+                        {% trans "Hi! I'm Mohamed, a Fullstack Web Developer based in Morocco. I create user-friendly interfaces for fast-growing startups." %}
                     </p>
 
                     <div class="relative mt-6">
                         <a href="{% static 'main/resume/my-resume.pdf' %}" target="_blank"
                            class="py-2 px-5 inline-flex items-center font-medium tracking-wide border align-middle duration-500 text-[15px] text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">
-                            Resume
+                            {% trans "Resume" %}
                             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                  viewBox="0 0 24 24">
@@ -51,23 +56,27 @@
 
                 <div class="relative lg:ms-6 before:content-[''] before:absolute before:start-1/2 before:-translate-x-1/2 rtl:before:translate-x-1/2 before:bottom-1/2 before:translate-y-1/2 before:w-[48rem] before:h-[20rem] before:rounded-[18rem] ltr:before:rotate-[135deg] rtl:before:rotate-[45deg] before:bg-orange-500 dark:before:bg-orange-500">
                     <div class="relative z-1">
-                        <img class="rounded-xl" style="max-width:480px" src="{% static 'main/images/main.png' %}" alt="">
+                        <img class="rounded-xl" style="max-width:480px" src="{% static 'main/images/main.png' %}"
+                             alt="">
 
                         <div class="absolute lg:bottom-20 -bottom-5 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
-                            <span class="text-3xl font-medium mb-0"><span class="counter-value font-bold"
-                                                                          data-target="5">5</span>+</span>
-                            <h6 class="text-sm text-slate-400 mt-1">Project Completed</h6>
+                        <span class="text-3xl font-medium mb-0">
+                            <span class="counter-value font-bold" data-target="5">5</span>+
+                        </span>
+                            <h6 class="text-sm text-slate-400 mt-1">{% trans "Project Completed" %}</h6>
                         </div>
 
                         <div class="absolute md:top-20 top-32 md:-end-10 -end-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
-                            <h6 class="font-semibold">Web Developer</h6>
-                            <h6 class="text-sm text-slate-400 mt-1">1+ Year Experience</h6>
+                            <h6 class="font-semibold">{% trans "Web Developer" %}</h6>
+                            <h6 class="text-sm text-slate-400 mt-1">{% trans "1+ Year Experience" %}</h6>
                         </div>
                     </div>
                 </div>
             </div><!--end grid-->
         </div><!--end container-->
-    </section><!--end section-->
+    </section>
+    <!--end section-->
+
     <!-- End Hero -->
 
     <!-- Start -->
@@ -96,27 +105,21 @@
 
                 <div class="lg:col-span-7 md:col-span-6">
                     <div class="lg:ms-5">
-                        <h6 class="text-orange-500 text-sm font-medium uppercase mb-2">About Me</h6>
-                        <h3 class="mb-4 md:text-2xl text-xl font-medium">Transforming Ideas into Reality Through
-                            Innovative Web Solutions</h3>
+                        <h6 class="text-orange-500 text-sm font-medium uppercase mb-2">{% trans "About Me" %}</h6>
+                        <h3 class="mb-4 md:text-2xl text-xl font-medium">{% trans "Transforming Ideas into Reality Through Innovative Web Solutions" %}</h3>
 
                         <p class="text-slate-400 dark:text-white/60 max-w-xl">
-                            I am a dedicated web developer skilled in both front-end and back-end technologies. My
-                            experience in creating responsive web applications allows me to solve complex problems and
-                            deliver excellent user experiences. I aim to leverage technology to build solutions that
-                            exceed user expectations.
+                            {% trans "I am a dedicated web developer skilled in both front-end and back-end technologies. My experience in creating responsive web applications allows me to solve complex problems and deliver excellent user experiences. I aim to leverage technology to build solutions that exceed user expectations." %}
                         </p>
 
                         <p class="text-slate-400 dark:text-white/60 max-w-xl">
-                            With a focus on design and performance, I use modern frameworks to create scalable
-                            applications. I continuously learn new technologies and value collaboration, believing that
-                            the best solutions come from understanding user needs and working together.
+                            {% trans "With a focus on design and performance, I use modern frameworks to create scalable applications. I continuously learn new technologies and value collaboration, believing that the best solutions come from understanding user needs and working together." %}
                         </p>
 
                         <!-- Python skill -->
                         <div class="mt-6">
                             <div class="flex justify-between mb-2">
-                                <span class="text-slate-400 dark:text-white/60">Python</span>
+                                <span class="text-slate-400 dark:text-white/60">{% trans "Python" %}</span>
                                 <span class="text-slate-400 dark:text-white/60">70%</span>
                             </div>
                             <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
@@ -125,7 +128,7 @@
                         </div>
                         <div class="mt-4">
                             <div class="flex justify-between mb-2">
-                                <span class="text-slate-400 dark:text-white/60">Django</span>
+                                <span class="text-slate-400 dark:text-white/60">{% trans "Django" %}</span>
                                 <span class="text-slate-400 dark:text-white/60">80%</span>
                             </div>
                             <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
@@ -136,7 +139,7 @@
                         <!-- HTML & CSS skill -->
                         <div class="mt-4">
                             <div class="flex justify-between mb-2">
-                                <span class="text-slate-400 dark:text-white/60">HTML & CSS</span>
+                                <span class="text-slate-400 dark:text-white/60">{% trans "HTML & CSS" %}</span>
                                 <span class="text-slate-400 dark:text-white/60">98%</span>
                             </div>
                             <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
@@ -147,14 +150,14 @@
                 </div>
             </div>
             <!--grid-->
-        </div><!--end container-->
+        </div>
+        <!--end container-->
 
         <div id="service" class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-6 text-center">
-                <h3 class="mb-6 md:text-2xl text-xl font-medium">What I do</h3>
+                <h3 class="mb-6 md:text-2xl text-xl font-medium">{% trans "What I do" %}</h3>
                 <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
-                    I specialize in creating robust and scalable web applications, delivering top-notch solutions for
-                    various business needs. Explore my services below:
+                    {% trans "I specialize in creating robust and scalable web applications, delivering top-notch solutions for various business needs. Explore my services below:" %}
                 </p>
             </div>
 
@@ -174,11 +177,10 @@
                     </div>
 
                     <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-blue-500">Full-Stack
-                            Web Development</a>
+                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-blue-500">
+                            {% trans "Full-Stack Web Development" %}</a>
                         <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            Custom web development solutions using Python, Django, JavaScript, and other modern
-                            technologies to build scalable and efficient applications.
+                            {% trans "Custom web development solutions using Python, Django, JavaScript, and other modern technologies to build scalable and efficient applications." %}
                         </p>
                     </div>
                 </div>
@@ -198,11 +200,10 @@
                         </div>
                     </div>
                     <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-green-500">E-commerce
-                            Solutions</a>
+                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-green-500">
+                            {% trans "E-commerce Solutions" %}</a>
                         <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            Comprehensive e-commerce solutions for setting up and growing your online store, leveraging
-                            platforms like WooCommerce and Shopify.
+                            {% trans "Comprehensive e-commerce solutions for setting up and growing your online store, leveraging platforms like WooCommerce and Shopify." %}
                         </p>
                     </div>
                 </div>
@@ -221,11 +222,10 @@
                         </div>
                     </div>
                     <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">API
-                            Development</a>
+                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">
+                            {% trans "API Development" %}</a>
                         <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            Expert API development services to create robust and scalable APIs, enabling seamless
-                            integration with your web and mobile applications.
+                            {% trans "Expert API development services to create robust and scalable APIs, enabling seamless integration with your web and mobile applications." %}
                         </p>
                     </div>
                 </div>
@@ -244,11 +244,10 @@
                         </div>
                     </div>
                     <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-red-500">Front-End
-                            Development</a>
+                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-red-500">
+                            {% trans "Front-End Development" %}</a>
                         <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            Creating intuitive and dynamic user interfaces using HTML5, CSS3, JavaScript, Angular, and
-                            React.js.
+                            {% trans "Creating intuitive and dynamic user interfaces using HTML5, CSS3, JavaScript, Angular, and React.js." %}
                         </p>
                     </div>
                 </div>
@@ -267,11 +266,10 @@
                         </div>
                     </div>
                     <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-yellow-500">Back-End
-                            Development</a>
+                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-yellow-500">
+                            {% trans "Back-End Development" %}</a>
                         <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            Building robust and scalable back-end solutions using Python, Django, Java, Spring Boot, and
-                            PHP Laravel.
+                            {% trans "Building robust and scalable back-end solutions using Python, Django, Java, Spring Boot, and  PHP Laravel." %}
                         </p>
                     </div>
                 </div>
@@ -282,12 +280,10 @@
 
         <div id="projects" class="container relative md:mt-24 mt-16">
             <div class="grid grid-cols-1 pb-6 text-center">
-                <h3 class="mb-6 md:text-2xl text-xl font-medium">My Projects</h3>
+                <h3 class="mb-6 md:text-2xl text-xl font-medium">{% trans "My Projects" %}</h3>
 
-                <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto"> Explore a selection of my key projects,
-                    showcasing a diverse set of skills ranging from front-end development to back-end engineering. Each
-                    project has been carefully crafted to solve real-world problems, with attention to detail, user
-                    experience, and scalability.
+                <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
+                    {% trans "Explore a selection of my key projects, showcasing a diverse set of skills ranging from front-end development to back-end engineering. Each project has been carefully crafted to solve real-world problems, with attention to detail, user experience, and scalability." %}
                 </p>
             </div><!--end grid-->
 
@@ -296,16 +292,20 @@
                     <div class="filters-group">
                         <ul class="mb-0 list-none container-filter filter-options space-x-3">
                             <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500 active"
-                                data-group="all">All
+                                data-group="all">
+                                {% trans "All" %}
                             </li>
                             <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
-                                data-group="backend">Back-end
+                                data-group="backend">
+                                {% trans "Back-end" %}
                             </li>
                             <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
-                                data-group="frontend">Front-end
+                                data-group="frontend">
+                                {% trans "Front-end" %}
                             </li>
                             <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
-                                data-group="apis">APIs
+                                data-group="apis">
+                                {% trans "APIs" %}
                             </li>
                         </ul>
                     </div>
@@ -325,14 +325,20 @@
                             <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
                                 <a href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/"
                                    target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Recipes
-                                    Dashboard</a>
-                                <p><a target="_blank" href="https://github.com/Fatima-Ezzahra-Zahid/recipes_food"
-                                      class="text-slate-400 dark:text-white/60 mb-0">Git hub</a></p>
+                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                    {% trans "Recipes Dashboard" %}
+                                </a>
+                                <p>
+                                    <a target="_blank" href="https://github.com/Fatima-Ezzahra-Zahid/recipes_food"
+                                       class="text-slate-400 dark:text-white/60 mb-0">
+                                        {% trans "Git hub" %}
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["apis"]'>
                     <div class="group relative block rounded-xl duration-700 ease-in-out">
                         <div class="relative overflow-hidden rounded-xl">
@@ -343,14 +349,20 @@
                         <div class="content duration-700 ease-in-out">
                             <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
                                 <a href="https://github.com/mdzoubir/diidasko" target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">School
-                                    APi</a>
-                                <p><a target="_blank" href="https://github.com/mdzoubir/diidasko"
-                                      class="text-slate-400 dark:text-white/60 mb-0">Git hub</a></p>
+                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                    {% trans "School API" %}
+                                </a>
+                                <p>
+                                    <a target="_blank" href="https://github.com/mdzoubir/diidasko"
+                                       class="text-slate-400 dark:text-white/60 mb-0">
+                                        {% trans "Git hub" %}
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["frontend", "backend"]'>
                     <div class="group relative block rounded-xl duration-700 ease-in-out">
                         <div class="relative overflow-hidden rounded-xl">
@@ -361,14 +373,17 @@
                         <div class="content duration-700 ease-in-out">
                             <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
                                 <a href="https://www.knowplus.be/" target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">Knowplus</a>
+                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                    {% trans "Knowplus" %}
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div><!--end container-->
+        </div>
+
+        <!--end container-->
 
         <div id="contact" class="container relative md:mt-24 mt-16">
             <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
@@ -376,51 +391,54 @@
 
                 <div class="lg:ms-5">
                     <div class="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 p-6">
-                        <h3 class="mb-6 text-2xl leading-normal font-medium">Get in touch !</h3>
+                        <h3 class="mb-6 text-2xl leading-normal font-medium">{% trans "Get in touch!" %}</h3>
 
                         <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
                             <p class="mb-0" id="error-msg"></p>
                             <div id="simple-msg"></div>
                             <div class="grid lg:grid-cols-12 lg:gap-6">
                                 <div class="lg:col-span-6 mb-5">
-                                    <label for="name" class="form-label font-medium">Your Name:</label>
+                                    <label for="name" class="form-label font-medium">{% trans "Your Name:" %}</label>
                                     <input name="name" id="name" type="text"
                                            class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
-                                           placeholder="Name :">
+                                           placeholder="{% trans 'Name :' %}">
                                 </div>
 
                                 <div class="lg:col-span-6 mb-5">
-                                    <label for="email" class="form-label font-medium">Your Email:</label>
+                                    <label for="email" class="form-label font-medium">{% trans "Your Email:" %}</label>
                                     <input name="email" id="email" type="email"
                                            class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
-                                           placeholder="Email :">
+                                           placeholder="{% trans 'Email :' %}">
                                 </div>
                             </div>
 
                             <div class="grid grid-cols-1">
                                 <div class="mb-5">
-                                    <label for="subject" class="form-label font-medium">Your Question:</label>
+                                    <label for="subject"
+                                           class="form-label font-medium">{% trans "Your Question:" %}</label>
                                     <input name="subject" id="subject"
                                            class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
-                                           placeholder="Subject :">
+                                           placeholder="{% trans 'Subject :' %}">
                                 </div>
 
                                 <div class="mb-5">
-                                    <label for="comments" class="form-label font-medium">Your Comment:</label>
+                                    <label for="comments"
+                                           class="form-label font-medium">{% trans "Your Comment:" %}</label>
                                     <textarea name="comments" id="comments"
                                               class="form-input w-full py-2 px-3 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2 textarea h-28"
-                                              placeholder="Message :"></textarea>
+                                              placeholder="{% trans 'Message :' %}"></textarea>
                                 </div>
                             </div>
                             <button type="submit" id="submit" name="send"
                                     class="py-2 px-5 inline-block font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">
-                                Send Message
+                                {% trans "Send Message" %}
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
-        </div><!--end container-->
+        </div>
+        <!--end container-->
     </section><!--end section-->
     <!-- End -->
 
@@ -441,6 +459,57 @@
                     <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
                 </label>
             </span>
+    </div>
+    <div class="fixed top-2/4 -right-2 z-3">
+        <form action="{% url 'set_language' %}" method="post" class="max-w-sm mx-auto">
+            {% csrf_token %}
+            {% get_current_language as LANGUAGE_CODE %}
+            <button id="language-button" type="button"
+                    class="flex-shrink-0 z-10 inline-flex items-center py-2.5 rounded-lg text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                    aria-expanded="false">
+                            <span class="m-2 flex align-center justify-center capitalize">
+                                {% for lang_code, lang_name in LANGUAGES %}
+                                    {% if lang_code == LANGUAGE_CODE %}
+                                        <img src="{% static 'main/images/flags/'|add:lang_code|add:'.svg' %}" alt="">
+                                    {% endif %}
+                                {% endfor %}
+                            </span>
+            </button>
+            <div id="dropdown-languages"
+                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-e-xl shadow dark:bg-gray-700">
+                <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="language-button">
+                    {% for lang_code, lang_name in LANGUAGES %}
+                        {% if lang_code != LANGUAGE_CODE %}
+                        <li>
+                            <button type="submit" name="language" value="{{ lang_code }}"
+                                    class="inline-flex text-sm">
+                                <img src="{% static 'main/images/flags/'|add:lang_code|add:'.svg' %}" alt=""
+                                     class="m-2">
+                            </button>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </form>
+
+        <script>
+            // Toggle dropdown visibility
+            document.getElementById('language-button').addEventListener('click', function () {
+                const dropdown = document.getElementById('dropdown-languages');
+                const isExpanded = dropdown.classList.toggle('hidden');
+                this.setAttribute('aria-expanded', !isExpanded);
+            });
+
+
+            // Close dropdown when clicking outside
+            window.addEventListener('click', function (event) {
+                const dropdown = document.getElementById('dropdown-languages');
+                if (!event.target.closest('#language-button')) {
+                    dropdown.classList.add('hidden');
+                }
+            });
+        </script>
     </div>
     <!-- Switcher -->
 {% endblock %}

@@ -1,10 +1,14 @@
 {% load static %}
+{% load i18n %}
+
+
 <!-- Start Navbar -->
 <nav id="topnav" class="defaultscroll is-sticky">
     <div class="container relative">
         <!-- Logo container-->
         <a class="logo" href="{% url 'main:home' %}">
-            <img src="{% static 'main/logo/logo-transparent.png' %}" class="h-5 inline-block size-xl dark:hidden" alt="">
+            <img src="{% static 'main/logo/logo-transparent.png' %}" class="h-5 inline-block size-xl dark:hidden"
+                 alt="">
             <img src="{% static 'main/logo/logo-white-transparent.png' %}" class="h-5 hidden dark:inline-block" alt="">
         </a>
         <!-- End Logo container-->
@@ -23,25 +27,32 @@
         </div>
         <!-- End Mobile Toggle -->
 
-        <!--Login button Start-->
+        <!-- Login button Start -->
         <ul class="buy-button list-none mb-0">
             <li class="inline mb-0">
-                <a target="_blank" href="https://www.linkedin.com/in/mohamed-zoubir/" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-500 hover:border-orange-600 text-white"><i data-feather="linkedin" class="h-[14px] w-[14px] align-middle" title="dribbble"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mohamed-zoubir/"
+                   class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-500 hover:border-orange-600 text-white">
+                    <i data-feather="linkedin" class="h-[14px] w-[14px] align-middle" title="linkedin"></i>
+                </a>
             </li>
+
             <li class="inline mb-0">
-                <a target="_blank" href="https://github.com/mdzoubir" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-500 hover:border-orange-600 text-white"><i data-feather="github" class="h-[14px] w-[14px] align-middle" title="dribbble"></i></a>
+                <a target="_blank" href="https://github.com/mdzoubir"
+                   class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[15px] text-center rounded-xl bg-orange-500 hover:bg-orange-600 border border-orange-500 hover:border-orange-600 text-white">
+                    <i data-feather="github" class="h-[14px] w-[14px] align-middle" title="github"></i>
+                </a>
             </li>
         </ul>
-        <!--Login button End-->
+        <!-- Login button End -->
 
         <div id="navigation">
-            <!-- Navigation Menu-->
+            <!-- Navigation Menu -->
             <ul class="navigation-menu justify-end">
-                <li><a href="#home" class="sub-menu-item active">Home</a></li>
-                <li><a href="#about" class="sub-menu-item">About Me</a></li>
-                <li><a href="#service" class="sub-menu-item">Services </a></li>
-                <li><a href="#projects" class="sub-menu-item">Projects </a></li>
-                <li><a href="#contact" class="sub-menu-item">Contact Us</a></li>
+                <li><a href="#home" class="sub-menu-item active">{% trans "Home" %}</a></li>
+                <li><a href="#about" class="sub-menu-item">{% trans "About Me" %}</a></li>
+                <li><a href="#service" class="sub-menu-item">{% trans "Services" %}</a></li>
+                <li><a href="#projects" class="sub-menu-item">{% trans "Projects" %}</a></li>
+                <li><a href="#contact" class="sub-menu-item">{% trans "Contact Us" %}</a></li>
             </ul>
         </div>
     </div>

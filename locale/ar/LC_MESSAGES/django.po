@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-02 21:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: .\main\templates\main\includes\footer.html:19
+msgid "Design with"
+msgstr "تصميم مع"
+
+#: .\main\templates\main\includes\navbar.html:51
+msgid "Home"
+msgstr "الرئيسية"
+
+#: .\main\templates\main\includes\navbar.html:52
+#: .\main\templates\main\index.html:108
+msgid "About Me"
+msgstr "عني"
+
+#: .\main\templates\main\includes\navbar.html:53
+msgid "Services"
+msgstr "الخدمات"
+
+#: .\main\templates\main\includes\navbar.html:54
+msgid "Projects"
+msgstr "المشاريع"
+
+#: .\main\templates\main\includes\navbar.html:55
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#: .\main\templates\main\index.html:28
+msgid "Hi, I'm"
+msgstr "مرحبًا، أنا"
+
+#: .\main\templates\main\index.html:35
+msgid "A Full-Stack Developer"
+msgstr "مطور شامل"
+
+#: .\main\templates\main\index.html:39
+msgid ""
+"Hi! I'm Mohamed, a Fullstack Web Developer based in Morocco. I create user-"
+"friendly interfaces for fast-growing startups."
+msgstr ""
+"مرحبًا! أنا محمد، مطور شامل للويب مقيم في المغرب. أعمل على إنشاء واجهات مستخدم "
+"صديقة للمستخدم لشركات ناشئة سريعة النمو."
+
+#: .\main\templates\main\index.html:45
+msgid "Resume"
+msgstr "السيرة الذاتية"
+
+#: .\main\templates\main\index.html:66
+msgid "Project Completed"
+msgstr "المشروع مكتمل"
+
+#: .\main\templates\main\index.html:70
+msgid "Web Developer"
+msgstr "مطور ويب"
+
+#: .\main\templates\main\index.html:71
+msgid "1+ Year Experience"
+msgstr "خبرة أكثر من سنة"
+
+#: .\main\templates\main\index.html:109
+msgid "Transforming Ideas into Reality Through Innovative Web Solutions"
+msgstr "تحويل الأفكار إلى واقع من خلال حلول الويب المبتكرة"
+
+#: .\main\templates\main\index.html:112
+msgid ""
+"I am a dedicated web developer skilled in both front-end and back-end "
+"technologies. My experience in creating responsive web applications allows "
+"me to solve complex problems and deliver excellent user experiences. I aim "
+"to leverage technology to build solutions that exceed user expectations."
+msgstr ""
+"أنا مطور ويب مخلص متمكن في كل من تقنيات الواجهة الأمامية والخلفية. خبرتي في إنشاء "
+"تطبيقات الويب التفاعلية تمكنني من حل المشكلات المعقدة وتقديم تجارب مستخدم ممتازة. "
+"أسعى للاستفادة من التكنولوجيا لبناء حلول تتجاوز توقعات المستخدمين."
+
+#: .\main\templates\main\index.html:116
+msgid ""
+"With a focus on design and performance, I use modern frameworks to create "
+"scalable applications. I continuously learn new technologies and value "
+"collaboration, believing that the best solutions come from understanding "
+"user needs and working together."
+msgstr ""
+"مع التركيز على التصميم والأداء، أستخدم أطر العمل الحديثة لإنشاء تطبيقات قابلة "
+"للتوسع. أتعلم باستمرار تقنيات جديدة وأقدّر التعاون، معتقدًا أن أفضل الحلول "
+"تأتي من فهم احتياجات المستخدم والعمل معًا."
+
+#: .\main\templates\main\index.html:122
+msgid "Python"
+msgstr "بايثون"
+
+#: .\main\templates\main\index.html:131
+msgid "Django"
+msgstr "Django"
+
+#: .\main\templates\main\index.html:142
+msgid "HTML & CSS"
+msgstr "HTML و CSS"
+
+#: .\main\templates\main\index.html:158
+msgid "What I do"
+msgstr "ماذا أفعل"
+
+#: .\main\templates\main\index.html:160
+msgid ""
+"I specialize in creating robust and scalable web applications, delivering "
+"top-notch solutions for various business needs. Explore my services below:"
+msgstr ""
+"أتخصص في إنشاء تطبيقات ويب قوية وقابلة للتوسع، وأقدم حلولًا ممتازة لاحتياجات "
+"الأعمال المختلفة. استعرض خدماتي أدناه:"
+
+#: .\main\templates\main\index.html:181
+msgid "Full-Stack Web Development"
+msgstr "تطوير الويب الشامل"
+
+#: .\main\templates\main\index.html:183
+msgid ""
+"Custom web development solutions using Python, Django, JavaScript, and other "
+"modern technologies to build scalable and efficient applications."
+msgstr ""
+"حلول تطوير ويب مخصصة باستخدام بايثون، جانغو، جافا سكريبت، وتقنيات حديثة أخرى "
+"لبناء تطبيقات قابلة للتوسع وفعالة."
+
+#: .\main\templates\main\index.html:204
+msgid "E-commerce Solutions"
+msgstr "حلول التجارة الإلكترونية"
+
+#: .\main\templates\main\index.html:206
+msgid ""
+"Comprehensive e-commerce solutions for setting up and growing your online "
+"store, leveraging platforms like WooCommerce and Shopify."
+msgstr ""
+"حلول شاملة للتجارة الإلكترونية لإعداد وتنمية متجرك الإلكتروني، مستفيدة من "
+"منصات مثل ووكوميرس وشوبيفاي."
+
+#: .\main\templates\main\index.html:226
+msgid "API Development"
+msgstr "تطوير واجهة برمجة التطبيقات"
+
+#: .\main\templates\main\index.html:228
+msgid ""
+"Expert API development services to create robust and scalable APIs, enabling "
+"seamless integration with your web and mobile applications."
+msgstr ""
+"خدمات تطوير واجهات برمجة التطبيقات المتخصصة لإنشاء واجهات قوية وقابلة للتوسع، "
+"مما يتيح تكامل سلس مع تطبيقاتك على الويب والمحمول."
+
+#: .\main\templates\main\index.html:248
+msgid "Front-End Development"
+msgstr "تطوير الواجهة الأمامية"
+
+#: .\main\templates\main\index.html:250
+msgid ""
+"Creating intuitive and dynamic user interfaces using HTML5, CSS3, "
+"JavaScript, Angular, and React.js."
+msgstr ""
+"إنشاء واجهات مستخدم بديهية وديناميكية باستخدام HTML5 و CSS3 و "
+"جافا سكريبت وAngular و React.js."
+
+#: .\main\templates\main\index.html:270
+msgid "Back-End Development"
+msgstr "تطوير الواجهة الخلفية"
+
+#: .\main\templates\main\index.html:272
+msgid ""
+"Building robust and scalable back-end solutions using Python, Django, Java, "
+"Spring Boot, and PHP Laravel."
+msgstr ""
+"بناء حلول خلفية قوية وقابلة للتوسع باستخدام بايثون، جانغو، جافا، "
+"Spring Boot، و PHP Laravel."
+
+#: .\main\templates\main\index.html:283
+msgid "My Projects"
+msgstr "مشاريعي"
+
+#: .\main\templates\main\index.html:286
+msgid ""
+"Explore a selection of my key projects, showcasing a diverse set of skills "
+"ranging from front-end development to back-end engineering. Each project has "
+"been carefully crafted to solve real-world problems, with attention to "
+"detail, user experience, and scalability."
+msgstr ""
+"استعرض مجموعة مختارة من مشاريعي الرئيسية، التي تعرض مجموعة متنوعة من المهارات "
+"تتراوح بين تطوير الواجهة الأمامية والهندسة الخلفية. تم تصميم كل مشروع بعناية "
+"لحل مشكلات العالم الحقيقي، مع الانتباه إلى التفاصيل وتجربة المستخدم وقابلية "
+"التوسع."
+
+#: .\main\templates\main\index.html:296
+msgid "All"
+msgstr "الكل"
+
+#: .\main\templates\main\index.html:300
+msgid "Back-end"
+msgstr "الواجهة الخلفية"
+
+#: .\main\templates\main\index.html:304
+msgid "Front-end"
+msgstr "الواجهة الأمامية"
+
+#: .\main\templates\main\index.html:308
+msgid "APIs"
+msgstr "واجهات برمجة التطبيقات"
+
+#: .\main\templates\main\index.html:329
+msgid "Recipes Dashboard"
+msgstr "لوحة تحكم الوصفات"
+
+#: .\main\templates\main\index.html:334 .\main\templates\main\index.html:358
+msgid "Git hub"
+msgstr "جيتهوب"
+
+#: .\main\templates\main\index.html:353
+msgid "School API"
+msgstr "واجهة برمجة تطبيقات المدرسة"
+
+#: .\main\templates\main\index.html:377
+msgid "Knowplus"
+msgstr "نوا بلس"
+
+#: .\main\templates\main\index.html:394
+msgid "Get in touch!"
+msgstr "تواصل معنا!"
+
+#: .\main\templates\main\index.html:401
+msgid "Your Name:"
+msgstr "اسمك:"
+
+#: .\main\templates\main\index.html:404
+msgid "Name :"
+msgstr "الاسم :"
+
+#: .\main\templates\main\index.html:408
+msgid "Your Email:"
+msgstr "بريدك الإلكتروني:"
+
+#: .\main\templates\main\index.html:411
+msgid "Email :"
+msgstr "البريد الإلكتروني :"
+
+#: .\main\templates\main\index.html:418
+msgid "Your Question:"
+msgstr "سؤالك:"
+
+#: .\main\templates\main\index.html:421
+msgid "Subject :"
+msgstr "الموضوع :"
+
+#: .\main\templates\main\index.html:426
+msgid "Your Comment:"
+msgstr "تعليقك:"
+
+#: .\main\templates\main\index.html:429
+msgid "Message :"
+msgstr "الرسالة :"
+
+#: .\main\templates\main\index.html:434
+msgid "Send Message"
+msgstr "إرسال الرسالة"

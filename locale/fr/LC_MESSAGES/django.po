@@ -1,0 +1,286 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-02 19:53+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\main\templates\main\includes\footer.html:19
+msgid "Design with"
+msgstr "Conçu avec"
+
+#: .\main\templates\main\includes\navbar.html:50
+msgid "Home"
+msgstr "Accueil"
+
+#: .\main\templates\main\includes\navbar.html:51
+#: .\main\templates\main\index.html:108
+msgid "About Me"
+msgstr "À propos de moi"
+
+#: .\main\templates\main\includes\navbar.html:52
+msgid "Services"
+msgstr "Services"
+
+#: .\main\templates\main\includes\navbar.html:53
+msgid "Projects"
+msgstr "Projets"
+
+#: .\main\templates\main\includes\navbar.html:54
+msgid "Contact Us"
+msgstr "Contactez-nous"
+
+#: .\main\templates\main\index.html:28
+msgid "Hi, I'm"
+msgstr "Salut, je suis"
+
+#: .\main\templates\main\index.html:35
+msgid "A Full-Stack Developer"
+msgstr "Un développeur Full-Stack"
+
+#: .\main\templates\main\index.html:39
+msgid ""
+"Hi! I'm Mohamed, a Fullstack Web Developer based in Morocco. I create user-"
+"friendly interfaces for fast-growing startups."
+msgstr ""
+"Salut ! Je suis Mohamed, un développeur web Fullstack basé au Maroc. Je crée "
+"des interfaces conviviales pour des startups en forte croissance."
+
+#: .\main\templates\main\index.html:45
+msgid "Resume"
+msgstr "CV"
+
+#: .\main\templates\main\index.html:66
+msgid "Project Completed"
+msgstr "Projets terminés"
+
+#: .\main\templates\main\index.html:70
+msgid "Web Developer"
+msgstr "Développeur Web"
+
+#: .\main\templates\main\index.html:71
+msgid "1+ Year Experience"
+msgstr "Plus d'un an d'expérience"
+
+#: .\main\templates\main\index.html:109
+msgid "Transforming Ideas into Reality Through Innovative Web Solutions"
+msgstr "Transformer des idées en réalité grâce à des solutions web innovantes"
+
+#: .\main\templates\main\index.html:112
+msgid ""
+"I am a dedicated web developer skilled in both front-end and back-end "
+"technologies. My experience in creating responsive web applications allows "
+"me to solve complex problems and deliver excellent user experiences. I aim "
+"to leverage technology to build solutions that exceed user expectations."
+msgstr ""
+"Je suis un développeur web dévoué, compétent dans les technologies front-end "
+"et back-end. Mon expérience dans la création d'applications web réactives me "
+"permet de résoudre des problèmes complexes et de fournir d'excellentes "
+"expériences utilisateur. Je vise à tirer parti de la technologie pour "
+"construire des solutions qui dépassent les attentes des utilisateurs."
+
+#: .\main\templates\main\index.html:116
+msgid ""
+"With a focus on design and performance, I use modern frameworks to create "
+"scalable applications. I continuously learn new technologies and value "
+"collaboration, believing that the best solutions come from understanding "
+"user needs and working together."
+msgstr ""
+"Avec un accent sur le design et la performance, j'utilise des frameworks "
+"modernes pour créer des applications évolutives. J'apprends continuellement "
+"de nouvelles technologies et valorise la collaboration, croyant que les "
+"meilleures solutions proviennent de la compréhension des besoins des "
+"utilisateurs et du travail ensemble."
+
+#: .\main\templates\main\index.html:122
+msgid "Python"
+msgstr "Python"
+
+#: .\main\templates\main\index.html:131
+msgid "Django"
+msgstr "Django"
+
+#: .\main\templates\main\index.html:142
+msgid "HTML & CSS"
+msgstr "HTML & CSS"
+
+#: .\main\templates\main\index.html:158
+msgid "What I do"
+msgstr "Que fais-je"
+
+#: .\main\templates\main\index.html:160
+msgid ""
+"I specialize in creating robust and scalable web applications, delivering "
+"top-notch solutions for various business needs. Explore my services below:"
+msgstr ""
+"Je me spécialise dans la création d'applications web robustes et évolutives, "
+"offrant des solutions de premier ordre pour divers besoins commerciaux. "
+"Découvrez mes services ci-dessous :"
+
+#: .\main\templates\main\index.html:181
+#, fuzzy
+#| msgid "A Full-Stack Developer"
+msgid "Full-Stack Web Development"
+msgstr "Développement Web Full-Stack"
+
+#: .\main\templates\main\index.html:183
+msgid ""
+"Custom web development solutions using Python, Django, JavaScript, and other "
+"modern technologies to build scalable and efficient applications."
+msgstr ""
+"Solutions de développement web personnalisées utilisant Python, Django, "
+"JavaScript et d'autres technologies modernes pour créer des applications "
+"évolutives et efficaces."
+
+#: .\main\templates\main\index.html:204
+msgid "E-commerce Solutions"
+msgstr "Solutions E-commerce"
+
+#: .\main\templates\main\index.html:206
+msgid ""
+"Comprehensive e-commerce solutions for setting up and growing your online "
+"store, leveraging platforms like WooCommerce and Shopify."
+msgstr ""
+"Solutions e-commerce complètes pour la mise en place et la croissance de "
+"votre boutique en ligne, tirant parti de plateformes comme WooCommerce et "
+"Shopify."
+
+#: .\main\templates\main\index.html:226
+#, fuzzy
+#| msgid "Web Developer"
+msgid "API Development"
+msgstr "Développement d'API"
+
+#: .\main\templates\main\index.html:228
+msgid ""
+"Expert API development services to create robust and scalable APIs, enabling "
+"seamless integration with your web and mobile applications."
+msgstr ""
+"Services de développement d'API pour créer des API robustes et évolutives, "
+"permettant une intégration fluide avec vos applications web et mobiles."
+
+#: .\main\templates\main\index.html:248
+msgid "Front-End Development"
+msgstr "Développement Front-End"
+
+#: .\main\templates\main\index.html:250
+msgid ""
+"Creating intuitive and dynamic user interfaces using HTML5, CSS3, "
+"JavaScript, Angular, and React.js."
+msgstr ""
+"Création d'interfaces utilisateur intuitives et dynamiques en utilisant "
+"HTML5, CSS3, JavaScript, Angular et React.js."
+
+#: .\main\templates\main\index.html:270
+msgid "Back-End Development"
+msgstr "Développement Back-End"
+
+#: .\main\templates\main\index.html:272
+msgid ""
+"Building robust and scalable back-end solutions using Python, Django, Java, "
+"Spring Boot, and  PHP Laravel."
+msgstr ""
+"Création de solutions back-end robustes et évolutives utilisant Python, "
+"Django, Java, Spring Boot et PHP Laravel."
+
+#: .\main\templates\main\index.html:283
+msgid "My Projects"
+msgstr "Projets"
+
+#: .\main\templates\main\index.html:286
+msgid ""
+"Explore a selection of my key projects, showcasing a diverse set of skills "
+"ranging from front-end development to back-end engineering. Each project has "
+"been carefully crafted to solve real-world problems, with attention to "
+"detail, user experience, and scalability."
+msgstr ""
+"Découvrez une sélection de mes projets clés, mettant en avant un ensemble "
+"divers de compétences allant du développement front-end à l'ingénierie back-"
+"end. Chaque projet a été soigneusement élaboré pour résoudre des problèmes "
+"concrets, avec une attention particulière aux détails, à l'expérience "
+"utilisateur et à la scalabilité."
+
+#: .\main\templates\main\index.html:296
+msgid "All"
+msgstr "Tous"
+
+#: .\main\templates\main\index.html:300
+msgid "Back-end"
+msgstr "Back-end"
+
+#: .\main\templates\main\index.html:304
+msgid "Front-end"
+msgstr "Front-end"
+
+#: .\main\templates\main\index.html:308
+msgid "APIs"
+msgstr "API"
+
+#: .\main\templates\main\index.html:329
+msgid "Recipes Dashboard"
+msgstr "Tableau de bord des recettes"
+
+#: .\main\templates\main\index.html:334 .\main\templates\main\index.html:358
+msgid "Git hub"
+msgstr "GitHub"
+
+#: .\main\templates\main\index.html:353
+msgid "School API"
+msgstr "API de l'école"
+
+#: .\main\templates\main\index.html:377
+msgid "Knowplus"
+msgstr "Knowplus"
+
+#: .\main\templates\main\index.html:394
+msgid "Get in touch!"
+msgstr "Contactez-nous !"
+
+#: .\main\templates\main\index.html:401
+msgid "Your Name:"
+msgstr "Votre nom :"
+
+#: .\main\templates\main\index.html:404
+msgid "Name :"
+msgstr "Nom :"
+
+#: .\main\templates\main\index.html:408
+msgid "Your Email:"
+msgstr "Votre email :"
+
+#: .\main\templates\main\index.html:411
+msgid "Email :"
+msgstr "Email :"
+
+#: .\main\templates\main\index.html:418
+msgid "Your Question:"
+msgstr "Votre question :"
+
+#: .\main\templates\main\index.html:421
+msgid "Subject :"
+msgstr "Sujet :"
+
+#: .\main\templates\main\index.html:426
+msgid "Your Comment:"
+msgstr "Votre commentaire :"
+
+#: .\main\templates\main\index.html:429
+msgid "Message :"
+msgstr "Message :"
+
+#: .\main\templates\main\index.html:434
+msgid "Send Message"
+msgstr "Envoyer le message"

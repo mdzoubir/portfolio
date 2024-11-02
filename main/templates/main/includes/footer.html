@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+
 <!-- Start Footer -->
 <footer class="relative bg-gray-900 overflow-hidden">
     <div class="py-[30px] px-0 border-t border-slate-800">
@@ -14,8 +16,8 @@
                 <div class="lg:col-span-5 text-center mt-6 md:mt-0">
                     <p class="mb-0 text-gray-400">©
                         <script>document.write(new Date().getFullYear())</script>
-                        Muvico. Design with <i class="mdi mdi-heart text-red-600"></i> by <a
-                                href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.
+                        {% trans "Design with" %} <i class="mdi mdi-heart text-red-600"></i><a
+                                href="{% url 'main:home' %}" class="text-reset">MD Zoubir</a>.
                     </p>
                 </div>
 
