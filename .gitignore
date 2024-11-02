@@ -1,0 +1,46 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+portfolio/__pycache__/
+main/__pycache__/
+
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+*.pot
+*.py[cod]
+*.pdb
+
+# Local settings
+local_settings.py
+
+# Environment variables
+.env
+*.env
+
+# Static files
+staticfiles/
+media/
+
+# Ignore the local configuration files
+settings/local.py
+settings/local_settings.py
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
