@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
+import re
 
 
 # Create your views here.
@@ -23,17 +24,36 @@ def contact_view(request):
         if not name or not email or not subject or not comments:
             return JsonResponse({'error': 'All fields are required.'}, status=400)
 
-        # Construct the email message
-        message = f"Name: {name}\nEmail: {email}\n\n{comments}"
+        # Email validation
+        if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+            return JsonResponse({'error': 'Invalid email address.'}, status=400)
+
+        # Construct the email message (consider using HTML for better formatting)
+        message = f"""
+        <html>
+            <body>
+                <h3>New Contact Form Submission</h3>
+                <p><strong>Name:</strong> {name}</p>
+                <p><strong>Email:</strong> {email}</p>
+                <p><strong>Subject:</strong> {subject}</p>
+                <p><strong>Message:</strong></p>
+                <p>{comments}</p>
+            </body>
+        </html>
+        """
+
         try:
+            # Send the email
             send_mail(
                 subject,
-                message,
-                email,  # From email (sender)
+                '',  # Plain text message (this can be empty as we are sending HTML)
+                settings.DEFAULT_FROM_EMAIL,  # From email (sender)
                 [settings.EMAIL_HOST_USER],  # To email (recipient)
+                html_message=message,  # HTML message content
                 fail_silently=False,
             )
             return JsonResponse({'success': 'Your message has been sent!'})
         except Exception as e:
-            return JsonResponse({'error': f'Error sending email: {e}'}, status=500)
+            return JsonResponse({'error': f'Error sending email: {str(e)}'}, status=500)
+
     return JsonResponse({'error': 'Invalid request method'}, status=400)
