@@ -7,4 +7,5 @@ app_name = 'main'
 
 urlpatterns = [
     path('', views.home, name='home'),  # Home page URL
+    path('contact/', views.contact_view, name='contact'),
 ]
