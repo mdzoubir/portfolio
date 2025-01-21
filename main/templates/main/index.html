@@ -2,604 +2,666 @@
 {% load static %}
 {% load i18n %}
 {% block style %}
-    <style>
-        .navigation-menu .sub-menu-item.active {
-            color: #ff5722 !important; /* Your active color */
-            font-weight: bold !important;
-        }
+<style>
+    .navigation-menu .sub-menu-item.active {
+        color: #ff5722 !important;
+        /* Your active color */
+        font-weight: bold !important;
+    }
 
-        #about, #service, #contact, #projects {
-            scroll-margin-top: 140px !important; /* Adjust based on your navbar height */
-        }
-
-    </style>
+    #about,
+    #service,
+    #contact,
+    #projects {
+        scroll-margin-top: 140px !important;
+        /* Adjust based on your navbar height */
+    }
+</style>
 {% endblock %}
 {% block content %}
 
 
 
-    <!-- Start Hero -->
-    <section id="home"
-             class="relative overflow-hidden md:flex md:h-screen py-36 items-center bg-gray-50 dark:bg-slate-800">
-        <div class="container relative">
-            <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
-                <div>
-                    <h5 class="font-semibold leading-normal text-[20px] mt-6">
-                        {% trans "Hi, I'm" %} <span class="typewrite" data-period="2000"
-                                                    data-type='[ "Mohamed Zoubir", "Freelancer", "Full-stack developer", "Front-end Developer", "Back-end Developer" ]'>
+<!-- Start Hero -->
+<section id="home" class="relative overflow-hidden md:flex md:h-screen py-36 items-center bg-gray-50 dark:bg-slate-800">
+    <div class="container relative">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+            <div>
+                <h5 class="font-semibold leading-normal text-[20px] mt-6">
+                    {% trans "Hi, I'm" %} <span class="typewrite" data-period="2000"
+                        data-type='[ "Mohamed Zoubir", "Freelancer", "Full-stack developer", "Front-end Developer", "Back-end Developer" ]'>
                         <span class="wrap"></span>
                     </span>
-                    </h5>
+                </h5>
 
-                    <h5 class="md:text-5xl md:leading-normal text-3xl leading-normal font-bold mt-3">
-                        {% trans "A Full-Stack Developer" %}
-                    </h5>
+                <h5 class="md:text-5xl md:leading-normal text-3xl leading-normal font-bold mt-3">
+                    {% trans "A Full-Stack Developer" %}
+                </h5>
 
-                    <p class="text-slate-400 dark:text-white/60 text-[17px] max-w-xl mt-4">
-                        {% trans "Hi! I'm Mohamed, a Fullstack Web Developer based in Morocco. I create user-friendly interfaces for fast-growing startups." %}
-                    </p>
+                <p class="text-slate-400 dark:text-white/60 text-[17px] max-w-xl mt-4">
+                    {% trans "Hi! I'm Mohamed, a Fullstack Web Developer based in Morocco. I create user-friendly
+                    interfaces for fast-growing startups." %}
+                </p>
 
-                    <div class="relative mt-6">
-                        <a href="{% static 'main/resume/my-resume.pdf' %}" target="_blank"
-                           class="py-2 px-5 inline-flex items-center font-medium tracking-wide border align-middle duration-500 text-[15px] text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">
-                            {% trans "Resume" %}
-                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                 viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M12 13V4M7 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-2m-1-5-4 5-4-5m9 8h.01"/>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="relative mt-6">
+                    <a href="{% static 'main/resume/my-resume.pdf' %}" target="_blank"
+                        class="py-2 px-5 inline-flex items-center font-medium tracking-wide border align-middle duration-500 text-[15px] text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">
+                        {% trans "Resume" %}
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 13V4M7 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-2m-1-5-4 5-4-5m9 8h.01" />
+                        </svg>
+                    </a>
                 </div>
+            </div>
 
-                <div class="relative lg:ms-6 before:content-[''] before:absolute before:start-1/2 before:-translate-x-1/2 rtl:before:translate-x-1/2 before:bottom-1/2 before:translate-y-1/2 before:w-[48rem] before:h-[20rem] before:rounded-[18rem] ltr:before:rotate-[135deg] rtl:before:rotate-[45deg] before:bg-orange-500 dark:before:bg-orange-500">
-                    <div class="relative z-1">
-                        <img class="rounded-xl" style="max-width:480px" src="{% static 'main/images/main.png' %}"
-                             alt="">
+            <div
+                class="relative lg:ms-6 before:content-[''] before:absolute before:start-1/2 before:-translate-x-1/2 rtl:before:translate-x-1/2 before:bottom-1/2 before:translate-y-1/2 before:w-[48rem] before:h-[20rem] before:rounded-[18rem] ltr:before:rotate-[135deg] rtl:before:rotate-[45deg] before:bg-orange-500 dark:before:bg-orange-500">
+                <div class="relative z-1">
+                    <img class="rounded-xl" style="max-width:480px" src="{% static 'main/images/main.png' %}" alt="">
 
-                        <div class="absolute lg:bottom-20 -bottom-5 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+                    <div
+                        class="absolute lg:bottom-20 -bottom-5 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
                         <span class="text-3xl font-medium mb-0">
                             <span class="counter-value font-bold" data-target="5">5</span>+
                         </span>
-                            <h6 class="text-sm text-slate-400 mt-1">{% trans "Project Completed" %}</h6>
-                        </div>
-
-                        <div class="absolute md:top-20 top-32 md:-end-10 -end-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
-                            <h6 class="font-semibold">{% trans "Web Developer" %}</h6>
-                            <h6 class="text-sm text-slate-400 mt-1">{% trans "1+ Year Experience" %}</h6>
-                        </div>
+                        <h6 class="text-sm text-slate-400 mt-1">{% trans "Project Completed" %}</h6>
                     </div>
-                </div>
-            </div><!--end grid-->
-        </div><!--end container-->
-    </section>
-    <!--end section-->
 
-    <!-- End Hero -->
-
-    <!-- Start -->
-    <section class="relative overflow-hidden md:py-24 py-16">
-        <div id="about" class="container relative md:pb-24 pb-16">
-            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-                <div class="lg:col-span-5 md:col-span-6">
-                    <div class="relative">
-                        <div class="relative flex justify-end">
-                            <img src="{% static 'main/images/class.png' %}"
-                                 class="lg:w-[400px] w-[280px] rounded-xl shadow dark:shadow-gray-700" alt="">
-                            <div class="absolute top-0 translate-y-2/4 start-0 text-center">
-                                <a href="#!" data-type="youtube" data-id="S_CGed6E610"
-                                   class="lightbox h-20 w-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-orange-600">
-                                    <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute md:-start-5 start-0 -bottom-16">
-                            <img src="{% static 'main/images/main.png' %}"
-                                 class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl"
-                                 alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 md:col-span-6">
-                    <div class="lg:ms-5">
-                        <h6 class="text-orange-500 text-sm font-medium uppercase mb-2">{% trans "About Me" %}</h6>
-                        <h3 class="mb-4 md:text-2xl text-xl font-medium">{% trans "Transforming Ideas into Reality Through Innovative Web Solutions" %}</h3>
-
-                        <p class="text-slate-400 dark:text-white/60 max-w-xl">
-                            {% trans "I am a dedicated web developer skilled in both front-end and back-end technologies. My experience in creating responsive web applications allows me to solve complex problems and deliver excellent user experiences. I aim to leverage technology to build solutions that exceed user expectations." %}
-                        </p>
-
-                        <p class="text-slate-400 dark:text-white/60 max-w-xl">
-                            {% trans "With a focus on design and performance, I use modern frameworks to create scalable applications. I continuously learn new technologies and value collaboration, believing that the best solutions come from understanding user needs and working together." %}
-                        </p>
-
-                        <!-- Python skill -->
-                        <div class="mt-6">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-slate-400 dark:text-white/60">{% trans "Python" %}</span>
-                                <span class="text-slate-400 dark:text-white/60">70%</span>
-                            </div>
-                            <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                <div class="bg-orange-500 h-[6px] rounded-full" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-slate-400 dark:text-white/60">{% trans "Django" %}</span>
-                                <span class="text-slate-400 dark:text-white/60">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                <div class="bg-orange-500 h-[6px] rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-
-                        <!-- HTML & CSS skill -->
-                        <div class="mt-4">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-slate-400 dark:text-white/60">{% trans "HTML & CSS" %}</span>
-                                <span class="text-slate-400 dark:text-white/60">98%</span>
-                            </div>
-                            <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
-                                <div class="bg-orange-500 h-[6px] rounded-full" style="width: 98%"></div>
-                            </div>
-                        </div>
+                    <div
+                        class="absolute md:top-20 top-32 md:-end-10 -end-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+                        <h6 class="font-semibold">{% trans "Web Developer" %}</h6>
+                        <h6 class="text-sm text-slate-400 mt-1">{% trans "1+ Year Experience" %}</h6>
                     </div>
                 </div>
             </div>
-            <!--grid-->
-        </div>
-        <!--end container-->
+        </div><!--end grid-->
+    </div><!--end container-->
+</section>
+<!--end section-->
 
-        <div id="service" class="container relative md:mt-24 mt-16">
-            <div class="grid grid-cols-1 pb-6 text-center">
-                <h3 class="mb-6 md:text-2xl text-xl font-medium">{% trans "What I do" %}</h3>
-                <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
-                    {% trans "I specialize in creating robust and scalable web applications, delivering top-notch solutions for various business needs. Explore my services below:" %}
-                </p>
-            </div>
+<!-- End Hero -->
 
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-                <!-- Service 1: Full-Stack Web Development -->
-                <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
-                    <div class="relative overflow-hidden text-transparent -m-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                             class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                        <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                            <img src="{% static 'main/images/icons/decent-work-and-economic-growth.svg' %}" class="h-8"
-                                 alt="">
-                        </div>
-                    </div>
-
-                    <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-blue-500">
-                            {% trans "Full-Stack Web Development" %}</a>
-                        <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            {% trans "Custom web development solutions using Python, Django, JavaScript, and other modern technologies to build scalable and efficient applications." %}
-                        </p>
-                    </div>
-                </div>
-                <!-- Service 1 -->
-
-                <!-- Service 2: E-commerce Solutions -->
-                <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
-                    <div class="relative overflow-hidden text-transparent -m-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                             class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                        <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                            <img src="{% static 'main/images/icons/ecommerce-cart-svgrepo-com.svg' %}" class="h-8"
-                                 alt="">
-                        </div>
-                    </div>
-                    <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-green-500">
-                            {% trans "E-commerce Solutions" %}</a>
-                        <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            {% trans "Comprehensive e-commerce solutions for setting up and growing your online store, leveraging platforms like WooCommerce and Shopify." %}
-                        </p>
-                    </div>
-                </div>
-                <!-- Service 2 -->
-
-                <!-- Service 3: API Development -->
-                <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
-                    <div class="relative overflow-hidden text-transparent -m-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                             class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                        <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                            <img src="{% static 'main/images/icons/production-belt-time.svg' %}" class="h-8" alt="">
-                        </div>
-                    </div>
-                    <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">
-                            {% trans "API Development" %}</a>
-                        <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            {% trans "Expert API development services to create robust and scalable APIs, enabling seamless integration with your web and mobile applications." %}
-                        </p>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-
-                <!-- Service 5: Front-End Development -->
-                <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
-                    <div class="relative overflow-hidden text-transparent -m-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                             class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                        <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                            <img src="{% static 'main/images/icons/pictures-folder-memories.svg' %}" class="h-8" alt="">
-                        </div>
-                    </div>
-                    <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-red-500">
-                            {% trans "Front-End Development" %}</a>
-                        <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            {% trans "Creating intuitive and dynamic user interfaces using HTML5, CSS3, JavaScript, Angular, and React.js." %}
-                        </p>
-                    </div>
-                </div>
-                <!-- Service 5 -->
-
-                <!-- Service 6: Back-End Development -->
-                <div class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
-                    <div class="relative overflow-hidden text-transparent -m-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                             class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
-                        <div class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
-                            <img src="{% static 'main/images/icons/datastore-svgrepo-com.svg' %}" class="h-10" alt="">
-                        </div>
-                    </div>
-                    <div class="mt-6">
-                        <a href="services.html" class="text-lg font-medium duration-500 hover:text-yellow-500">
-                            {% trans "Back-End Development" %}</a>
-                        <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
-                            {% trans "Building robust and scalable back-end solutions using Python, Django, Java, Spring Boot, and  PHP Laravel." %}
-                        </p>
-                    </div>
-                </div>
-                <!-- Service 6 -->
-            </div>
-        </div>
-
-
-        <div id="projects" class="container relative md:mt-24 mt-16">
-            <div class="grid grid-cols-1 pb-6 text-center">
-                <h3 class="mb-6 md:text-2xl text-xl font-medium">{% trans "My Projects" %}</h3>
-
-                <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
-                    {% trans "Explore a selection of my key projects, showcasing a diverse set of skills ranging from front-end development to back-end engineering. Each project has been carefully crafted to solve real-world problems, with attention to detail, user experience, and scalability." %}
-                </p>
-            </div><!--end grid-->
-
-            <div class="grid grid-cols-1 items-center mt-6 gap-6">
-                <div class="filters-group-wrap text-center">
-                    <div class="filters-group">
-                        <ul class="mb-0 list-none container-filter filter-options space-x-3">
-                            <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500 active"
-                                data-group="all">
-                                {% trans "All" %}
-                            </li>
-                            <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
-                                data-group="backend">
-                                {% trans "Back-end" %}
-                            </li>
-                            <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
-                                data-group="frontend">
-                                {% trans "Front-end" %}
-                            </li>
-                            <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
-                                data-group="apis">
-                                {% trans "APIs" %}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!--grid-->
-
-            <div id="grid" class="md:flex w-full justify-center mx-auto mt-4">
-                <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["backend", "frontend"]'>
-                    <div class="group relative block rounded-xl duration-700 ease-in-out">
-                        <div class="relative overflow-hidden rounded-xl">
-                            <a target="_blank" href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/"
-                               class="lightbox">
-                                <img src="{% static 'main/projects/recieps.jpeg' %}" class="rounded-xl" alt="">
+<!-- Start -->
+<section class="relative overflow-hidden md:py-24 py-16">
+    <div id="about" class="container relative md:pb-24 pb-16">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+            <div class="lg:col-span-5 md:col-span-6">
+                <div class="relative">
+                    <div class="relative flex justify-end">
+                        <img src="{% static 'main/images/class.png' %}"
+                            class="lg:w-[400px] w-[280px] rounded-xl shadow dark:shadow-gray-700" alt="">
+                        <div class="absolute top-0 translate-y-2/4 start-0 text-center">
+                            <a href="#!" data-type="youtube" data-id="S_CGed6E610"
+                                class="lightbox h-20 w-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-orange-600">
+                                <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                             </a>
                         </div>
-                        <div class="content duration-700 ease-in-out">
-                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
-                                <a href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/"
-                                   target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
-                                    {% trans "Recipes Dashboard" %}
-                                </a>
-                                <p>
-                                    <a target="_blank" href="https://github.com/Fatima-Ezzahra-Zahid/recipes_food"
-                                       class="text-slate-400 dark:text-white/60 mb-0">
-                                        {% trans "Git hub" %}
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["backend", "frontend"]'>
-                    <div class="group relative block rounded-xl duration-700 ease-in-out">
-                        <div class="relative overflow-hidden rounded-xl">
-                            <a target="_blank" href="https://cultural-event-finder.vercel.app/"
-                               class="lightbox">
-                                <img src="{% static 'main/projects/cultural_events_finder.png' %}" class="rounded-xl" alt="">
-                            </a>
-                        </div>
-                        <div class="content duration-700 ease-in-out">
-                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
-                                <a href="https://cultural-event-finder.vercel.app/"
-                                   target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
-                                    {% trans "Recipes Dashboard" %}
-                                </a>
-                                <p>
-                                    <a target="_blank" href="https://github.com/mdzoubir/Cultural-Event-Finder"
-                                       class="text-slate-400 dark:text-white/60 mb-0">
-                                        {% trans "Git hub" %}
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["apis"]'>
-                    <div class="group relative block rounded-xl duration-700 ease-in-out">
-                        <div class="relative overflow-hidden rounded-xl">
-                            <a target="_blank" href="https://github.com/mdzoubir/diidasko" class="lightbox">
-                                <img src="{% static 'main/images/API.png' %}" class="rounded-xl" alt="">
-                            </a>
-                        </div>
-                        <div class="content duration-700 ease-in-out">
-                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
-                                <a href="https://github.com/mdzoubir/diidasko" target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
-                                    {% trans "School API" %}
-                                </a>
-                                <p>
-                                    <a target="_blank" href="https://github.com/mdzoubir/diidasko"
-                                       class="text-slate-400 dark:text-white/60 mb-0">
-                                        {% trans "Git hub" %}
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["frontend", "backend"]'>
-                    <div class="group relative block rounded-xl duration-700 ease-in-out">
-                        <div class="relative overflow-hidden rounded-xl">
-                            <a target="_blank" href="https://www.knowplus.be/" class="lightbox">
-                                <img src="{% static 'main/projects/knowplus.png' %}" class="rounded-xl" alt="">
-                            </a>
-                        </div>
-                        <div class="content duration-700 ease-in-out">
-                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
-                                <a href="https://www.knowplus.be/" target="_blank"
-                                   class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
-                                    {% trans "Knowplus" %}
-                                </a>
-                            </div>
-                        </div>
+                    <div class="absolute md:-start-5 start-0 -bottom-16">
+                        <img src="{% static 'main/images/main.png' %}"
+                            class="lg:w-[280px] w-[200px] border-8 border-white dark:border-slate-900 rounded-xl"
+                            alt="">
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--end container-->
-
-        <div id="contact" class="container relative md:mt-24 mt-16">
-            <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
-                <img src="{% static 'main/images/contact.svg' %}" alt="">
-
+            <div class="lg:col-span-7 md:col-span-6">
                 <div class="lg:ms-5">
-                    <div class="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 p-6">
-                        <h3 class="mb-6 text-2xl leading-normal font-medium">{% trans "Get in touch!" %}</h3>
+                    <h6 class="text-orange-500 text-sm font-medium uppercase mb-2">{% trans "About Me" %}</h6>
+                    <h3 class="mb-4 md:text-2xl text-xl font-medium">{% trans "Transforming Ideas into Reality Through
+                        Innovative Web Solutions" %}</h3>
 
-                        <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
-                            {% csrf_token %}
+                    <p class="text-slate-400 dark:text-white/60 max-w-xl">
+                        {% trans "I am a dedicated web developer skilled in both front-end and back-end technologies. My
+                        experience in creating responsive web applications allows me to solve complex problems and
+                        deliver excellent user experiences. I aim to leverage technology to build solutions that exceed
+                        user expectations." %}
+                    </p>
 
-                            <p class="mb-0" id="error-msg"></p>
-                            <div id="simple-msg"></div>
-                            <div class="grid lg:grid-cols-12 lg:gap-6">
-                                <div class="lg:col-span-6 mb-5">
-                                    <label for="name" class="form-label font-medium">{% trans "Your Name:" %}</label>
-                                    <input name="name" id="name" type="text"
-                                           class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
-                                           placeholder="{% trans 'Name :' %}">
-                                </div>
+                    <p class="text-slate-400 dark:text-white/60 max-w-xl">
+                        {% trans "With a focus on design and performance, I use modern frameworks to create scalable
+                        applications. I continuously learn new technologies and value collaboration, believing that the
+                        best solutions come from understanding user needs and working together." %}
+                    </p>
 
-                                <div class="lg:col-span-6 mb-5">
-                                    <label for="email" class="form-label font-medium">{% trans "Your Email:" %}</label>
-                                    <input name="email" id="email" type="email"
-                                           class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
-                                           placeholder="{% trans 'Email :' %}">
-                                </div>
-                            </div>
+                    <!-- Python skill -->
+                    <div class="mt-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400 dark:text-white/60">{% trans "Python" %}</span>
+                            <span class="text-slate-400 dark:text-white/60">70%</span>
+                        </div>
+                        <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                            <div class="bg-orange-500 h-[6px] rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400 dark:text-white/60">{% trans "Django" %}</span>
+                            <span class="text-slate-400 dark:text-white/60">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                            <div class="bg-orange-500 h-[6px] rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
 
-                            <div class="grid grid-cols-1">
-                                <div class="mb-5">
-                                    <label for="subject"
-                                           class="form-label font-medium">{% trans "Your Question:" %}</label>
-                                    <input name="subject" id="subject"
-                                           class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
-                                           placeholder="{% trans 'Subject :' %}">
-                                </div>
-
-                                <div class="mb-5">
-                                    <label for="comments"
-                                           class="form-label font-medium">{% trans "Your Comment:" %}</label>
-                                    <textarea name="comments" id="comments"
-                                              class="form-input w-full py-2 px-3 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2 textarea h-28"
-                                              placeholder="{% trans 'Message :' %}"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" id="submit" name="send"
-                                    class="py-2 px-5 inline-block font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">
-                                {% trans "Send Message" %}
-                            </button>
-                        </form>
+                    <!-- HTML & CSS skill -->
+                    <div class="mt-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400 dark:text-white/60">{% trans "HTML & CSS" %}</span>
+                            <span class="text-slate-400 dark:text-white/60">98%</span>
+                        </div>
+                        <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                            <div class="bg-orange-500 h-[6px] rounded-full" style="width: 98%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--end container-->
-    </section><!--end section-->
-    <!-- End -->
-
-    <!-- Back to top -->
-    <a href="#" onclick="topFunction()" id="back-to-top"
-       class="back-to-top fixed hidden text-lg rounded-xl z-10 bottom-5 end-5 h-8 w-8 text-center bg-orange-500 hover:bg-orange-600 text-white leading-9 justify-center items-center duration-500"><i
-            data-feather="arrow-up" class="h-[14px] w-[14px] stroke-[3]"></i></a>
-    <!-- Back to top -->
-
-    <!-- Switcher -->
-    <div class="fixed top-1/4 -right-2 z-3">
-            <span class="relative inline-block rotate-90">
-                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk"/>
-                <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8"
-                       for="chk">
-                    <i data-feather="moon" class="h-[18px] w-[18px] text-yellow-500"></i>
-                    <i data-feather="sun" class="h-[18px] w-[18px] text-yellow-500"></i>
-                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
-                </label>
-            </span>
+        <!--grid-->
     </div>
-    <div class="fixed top-2/4 -right-2 z-3">
-        <form action="{% url 'set_language' %}" method="post" class="max-w-sm mx-auto">
-            {% csrf_token %}
-            {% get_current_language as LANGUAGE_CODE %}
-            <button id="language-button" type="button"
-                    class="flex-shrink-0 z-10 inline-flex items-center py-2.5 rounded-lg text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
-                    aria-expanded="false">
-                            <span class="m-2 flex align-center justify-center capitalize">
-                                {% for lang_code, lang_name in LANGUAGES %}
-                                    {% if lang_code == LANGUAGE_CODE %}
-                                        <img src="{% static 'main/images/flags/'|add:lang_code|add:'.svg' %}" alt="">
-                                    {% endif %}
-                                {% endfor %}
-                            </span>
-            </button>
-            <div id="dropdown-languages"
-                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-e-xl shadow dark:bg-gray-700">
-                <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="language-button">
-                    {% for lang_code, lang_name in LANGUAGES %}
-                        {% if lang_code != LANGUAGE_CODE %}
-                        <li>
-                            <button type="submit" name="language" value="{{ lang_code }}"
-                                    class="inline-flex text-sm">
-                                <img src="{% static 'main/images/flags/'|add:lang_code|add:'.svg' %}" alt=""
-                                     class="m-2">
-                            </button>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+    <!--end container-->
+
+    <div id="service" class="container relative md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-6 text-center">
+            <h3 class="mb-6 md:text-2xl text-xl font-medium">{% trans "What I do" %}</h3>
+            <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
+                {% trans "I specialize in creating robust and scalable web applications, delivering top-notch solutions
+                for various business needs. Explore my services below:" %}
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+            <!-- Service 1: Full-Stack Web Development -->
+            <div
+                class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                    </svg>
+                    <div
+                        class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                        <img src="{% static 'main/images/icons/decent-work-and-economic-growth.svg' %}" class="h-8"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <a href="services.html" class="text-lg font-medium duration-500 hover:text-blue-500">
+                        {% trans "Full-Stack Web Development" %}</a>
+                    <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
+                        {% trans "Custom web development solutions using Python, Django, JavaScript, and other modern
+                        technologies to build scalable and efficient applications." %}
+                    </p>
+                </div>
             </div>
-        </form>
+            <!-- Service 1 -->
 
-        <script>
-            // Toggle dropdown visibility
-            document.getElementById('language-button').addEventListener('click', function () {
-                const dropdown = document.getElementById('dropdown-languages');
-                const isExpanded = dropdown.classList.toggle('hidden');
-                this.setAttribute('aria-expanded', !isExpanded);
-            });
+            <!-- Service 2: E-commerce Solutions -->
+            <div
+                class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                    </svg>
+                    <div
+                        class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                        <img src="{% static 'main/images/icons/ecommerce-cart-svgrepo-com.svg' %}" class="h-8" alt="">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <a href="services.html" class="text-lg font-medium duration-500 hover:text-green-500">
+                        {% trans "E-commerce Solutions" %}</a>
+                    <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
+                        {% trans "Comprehensive e-commerce solutions for setting up and growing your online store,
+                        leveraging platforms like WooCommerce and Shopify." %}
+                    </p>
+                </div>
+            </div>
+            <!-- Service 2 -->
 
+            <!-- Service 3: API Development -->
+            <div
+                class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                    </svg>
+                    <div
+                        class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                        <img src="{% static 'main/images/icons/production-belt-time.svg' %}" class="h-8" alt="">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <a href="services.html" class="text-lg font-medium duration-500 hover:text-orange-500">
+                        {% trans "API Development" %}</a>
+                    <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
+                        {% trans "Expert API development services to create robust and scalable APIs, enabling seamless
+                        integration with your web and mobile applications." %}
+                    </p>
+                </div>
+            </div>
+            <!-- Service 3 -->
 
-            // Close dropdown when clicking outside
-            window.addEventListener('click', function (event) {
-                const dropdown = document.getElementById('dropdown-languages');
-                if (!event.target.closest('#language-button')) {
-                    dropdown.classList.add('hidden');
-                }
-            });
-        </script>
+            <!-- Service 5: Front-End Development -->
+            <div
+                class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                    </svg>
+                    <div
+                        class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                        <img src="{% static 'main/images/icons/pictures-folder-memories.svg' %}" class="h-8" alt="">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <a href="services.html" class="text-lg font-medium duration-500 hover:text-red-500">
+                        {% trans "Front-End Development" %}</a>
+                    <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
+                        {% trans "Creating intuitive and dynamic user interfaces using HTML5, CSS3, JavaScript, Angular,
+                        and React.js." %}
+                    </p>
+                </div>
+            </div>
+            <!-- Service 5 -->
+
+            <!-- Service 6: Back-End Development -->
+            <div
+                class="group relative lg:px-6 transition duration-500 ease-in-out rounded-xl overflow-hidden text-center">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-hexagon h-28 w-28 fill-orange-500/5 mx-auto rotate-[30deg]">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                    </svg>
+                    <div
+                        class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-orange-500 rounded-xl transition duration-500 ease-in-out text-3xl flex align-middle justify-center items-center">
+                        <img src="{% static 'main/images/icons/datastore-svgrepo-com.svg' %}" class="h-10" alt="">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <a href="services.html" class="text-lg font-medium duration-500 hover:text-yellow-500">
+                        {% trans "Back-End Development" %}</a>
+                    <p class="text-slate-400 dark:text-white/60 text-[15px] duration-500 mt-3">
+                        {% trans "Building robust and scalable back-end solutions using Python, Django, Java, Spring
+                        Boot, and PHP Laravel." %}
+                    </p>
+                </div>
+            </div>
+            <!-- Service 6 -->
+        </div>
     </div>
-    <!-- Switcher -->
+
+
+    <div id="projects" class="container relative md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-6 text-center">
+            <h3 class="mb-6 md:text-2xl text-xl font-medium">{% trans "My Projects" %}</h3>
+
+            <p class="text-slate-400 dark:text-white/60 max-w-xl mx-auto">
+                {% trans "Explore a selection of my key projects, showcasing a diverse set of skills ranging from
+                front-end development to back-end engineering. Each project has been carefully crafted to solve
+                real-world problems, with attention to detail, user experience, and scalability." %}
+            </p>
+        </div><!--end grid-->
+
+        <div class="grid grid-cols-1 items-center mt-6 gap-6">
+            <div class="filters-group-wrap text-center">
+                <div class="filters-group">
+                    <ul class="mb-0 list-none container-filter filter-options space-x-3">
+                        <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500 active"
+                            data-group="all">
+                            {% trans "All" %}
+                        </li>
+                        <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
+                            data-group="backend">
+                            {% trans "Back-end" %}
+                        </li>
+                        <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
+                            data-group="frontend">
+                            {% trans "Front-end" %}
+                        </li>
+                        <li class="inline-block font-medium text-[15px] mb-3 text-slate-400 cursor-pointer relative duration-500"
+                            data-group="apis">
+                            {% trans "APIs" %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--grid-->
+
+        <div id="grid" class="md:flex w-full justify-center mx-auto mt-4">
+            <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["backend", "frontend"]'>
+                <div class="group relative block rounded-xl duration-700 ease-in-out">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <a target="_blank" href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/"
+                            class="lightbox">
+                            <img src="{% static 'main/projects/recieps.jpeg' %}" class="rounded-xl" alt="">
+                        </a>
+                    </div>
+                    <div class="content duration-700 ease-in-out">
+                        <div
+                            class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                            <a href="https://recipes-food-git-main-fatimaezzahras-projects.vercel.app/" target="_blank"
+                                class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                {% trans "Recipes Dashboard" %}
+                            </a>
+                            <p>
+                                <a target="_blank" href="https://github.com/Fatima-Ezzahra-Zahid/recipes_food"
+                                    class="text-slate-400 dark:text-white/60 mb-0">
+                                    {% trans "Git hub" %}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["backend", "frontend"]'>
+                <div class="group relative block rounded-xl duration-700 ease-in-out">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <a target="_blank" href="https://cultural-event-finder.vercel.app/" class="lightbox">
+                            <img src="{% static 'main/projects/cultural_events_finder.png' %}" class="rounded-xl"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="content duration-700 ease-in-out">
+                        <div
+                            class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                            <a href="https://cultural-event-finder.vercel.app/" target="_blank"
+                                class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                {% trans "Recipes Dashboard" %}
+                            </a>
+                            <p>
+                                <a target="_blank" href="https://github.com/mdzoubir/Cultural-Event-Finder"
+                                    class="text-slate-400 dark:text-white/60 mb-0">
+                                    {% trans "Git hub" %}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["apis"]'>
+                <div class="group relative block rounded-xl duration-700 ease-in-out">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <a target="_blank" href="https://github.com/mdzoubir/diidasko" class="lightbox">
+                            <img src="{% static 'main/images/API.png' %}" class="rounded-xl" alt="">
+                        </a>
+                    </div>
+                    <div class="content duration-700 ease-in-out">
+                        <div
+                            class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                            <a href="https://github.com/mdzoubir/diidasko" target="_blank"
+                                class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                {% trans "School API" %}
+                            </a>
+                            <p>
+                                <a target="_blank" href="https://github.com/mdzoubir/diidasko"
+                                    class="text-slate-400 dark:text-white/60 mb-0">
+                                    {% trans "Git hub" %}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["frontend", "backend"]'>
+                <div class="group relative block rounded-xl duration-700 ease-in-out">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <a target="_blank" href="https://www.knowplus.be/" class="lightbox">
+                            <img src="{% static 'main/projects/knowplus.png' %}" class="rounded-xl" alt="">
+                        </a>
+                    </div>
+                    <div class="content duration-700 ease-in-out">
+                        <div
+                            class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                            <a href="https://www.knowplus.be/" target="_blank"
+                                class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                {% trans "Knowplus" %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 p-3 picture-item" data-groups='["frontend"]'>
+                <div class="group relative block rounded-xl duration-700 ease-in-out">
+                    <div class="relative overflow-hidden rounded-xl">
+                        <a target="_blank" href="https://quordle-game.vercel.app/" class="lightbox">
+                            <img src="{% static 'main/projects/image.png' %}" class="rounded-xl" alt="">
+                        </a>
+                    </div>
+                    <div class="content duration-700 ease-in-out">
+                        <div
+                            class="bg-white dark:bg-slate-900 p-4 rounded-xl absolute z-10 bottom-3 start-3 duration-700 ease-in-out scale-0 group-hover:scale-100">
+                            <a href="https://quordle-game.vercel.app/" target="_blank"
+                                class="h6 text-[15px] font-medium hover:text-orange-500 duration-500 ease-in-out">
+                                Quordle Game
+                            </a>
+                            <p>
+                                <a target="_blank" href="https://github.com/mdzoubir/quordle-game"
+                                    class="text-slate-400 dark:text-white/60 mb-0">
+                                    {% trans "Git hub" %}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end container-->
+
+    <div id="contact" class="container relative md:mt-24 mt-16">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+            <img src="{% static 'main/images/contact.svg' %}" alt="">
+
+            <div class="lg:ms-5">
+                <div class="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-700 p-6">
+                    <h3 class="mb-6 text-2xl leading-normal font-medium">{% trans "Get in touch!" %}</h3>
+
+                    <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                        {% csrf_token %}
+
+                        <p class="mb-0" id="error-msg"></p>
+                        <div id="simple-msg"></div>
+                        <div class="grid lg:grid-cols-12 lg:gap-6">
+                            <div class="lg:col-span-6 mb-5">
+                                <label for="name" class="form-label font-medium">{% trans "Your Name:" %}</label>
+                                <input name="name" id="name" type="text"
+                                    class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
+                                    placeholder="{% trans 'Name :' %}">
+                            </div>
+
+                            <div class="lg:col-span-6 mb-5">
+                                <label for="email" class="form-label font-medium">{% trans "Your Email:" %}</label>
+                                <input name="email" id="email" type="email"
+                                    class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
+                                    placeholder="{% trans 'Email :' %}">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1">
+                            <div class="mb-5">
+                                <label for="subject" class="form-label font-medium">{% trans "Your Question:" %}</label>
+                                <input name="subject" id="subject"
+                                    class="form-input w-full py-2 px-3 h-10 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2"
+                                    placeholder="{% trans 'Subject :' %}">
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="comments" class="form-label font-medium">{% trans "Your Comment:" %}</label>
+                                <textarea name="comments" id="comments"
+                                    class="form-input w-full py-2 px-3 bg-transparent border border-inherit dark:border-gray-800 dark:bg-slate-900 dark:text-slate-200 rounded-xl outline-none focus:border-orange-500/50 dark:focus:border-orange-500/50 focus:ring-0 mt-2 textarea h-28"
+                                    placeholder="{% trans 'Message :' %}"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" id="submit" name="send"
+                            class="py-2 px-5 inline-block font-normal tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 text-white rounded-xl">
+                            {% trans "Send Message" %}
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+</section><!--end section-->
+<!-- End -->
+
+<!-- Back to top -->
+<a href="#" onclick="topFunction()" id="back-to-top"
+    class="back-to-top fixed hidden text-lg rounded-xl z-10 bottom-5 end-5 h-8 w-8 text-center bg-orange-500 hover:bg-orange-600 text-white leading-9 justify-center items-center duration-500"><i
+        data-feather="arrow-up" class="h-[14px] w-[14px] stroke-[3]"></i></a>
+<!-- Back to top -->
+
+<!-- Switcher -->
+<div class="fixed top-1/4 -right-2 z-3">
+    <span class="relative inline-block rotate-90">
+        <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+        <label
+            class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8"
+            for="chk">
+            <i data-feather="moon" class="h-[18px] w-[18px] text-yellow-500"></i>
+            <i data-feather="sun" class="h-[18px] w-[18px] text-yellow-500"></i>
+            <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+        </label>
+    </span>
+</div>
+<div class="fixed top-2/4 -right-2 z-3">
+    <form action="{% url 'set_language' %}" method="post" class="max-w-sm mx-auto">
+        {% csrf_token %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <button id="language-button" type="button"
+            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 rounded-lg text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+            aria-expanded="false">
+            <span class="m-2 flex align-center justify-center capitalize">
+                {% for lang_code, lang_name in LANGUAGES %}
+                {% if lang_code == LANGUAGE_CODE %}
+                <img src="{% static 'main/images/flags/'|add:lang_code|add:'.svg' %}" alt="">
+                {% endif %}
+                {% endfor %}
+            </span>
+        </button>
+        <div id="dropdown-languages"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-e-xl shadow dark:bg-gray-700">
+            <ul class="text-sm text-gray-700 dark:text-gray-200" aria-labelledby="language-button">
+                {% for lang_code, lang_name in LANGUAGES %}
+                {% if lang_code != LANGUAGE_CODE %}
+                <li>
+                    <button type="submit" name="language" value="{{ lang_code }}" class="inline-flex text-sm">
+                        <img src="{% static 'main/images/flags/'|add:lang_code|add:'.svg' %}" alt="" class="m-2">
+                    </button>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </form>
+
+    <script>
+        // Toggle dropdown visibility
+        document.getElementById('language-button').addEventListener('click', function () {
+            const dropdown = document.getElementById('dropdown-languages');
+            const isExpanded = dropdown.classList.toggle('hidden');
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function (event) {
+            const dropdown = document.getElementById('dropdown-languages');
+            if (!event.target.closest('#language-button')) {
+                dropdown.classList.add('hidden');
+            }
+        });
+    </script>
+</div>
+<!-- Switcher -->
 {% endblock %}
 
 {% block script %}
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.sub-menu-item');
-            let isClicking = false; // Flag to detect when a click event is in progress
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.sub-menu-item');
+        let isClicking = false; // Flag to detect when a click event is in progress
 
-            // Function to update the active link based on scroll
-            function updateActiveLink() {
-                if (isClicking) return; // Skip scroll update if a click event is in progress
+        // Function to update the active link based on scroll
+        function updateActiveLink() {
+            if (isClicking) return; // Skip scroll update if a click event is in progress
 
-                let currentSection = '';
+            let currentSection = '';
 
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (window.scrollY >= sectionTop - 60 && window.scrollY < sectionTop + sectionHeight - 60) {
-                        currentSection = section.getAttribute('id');
-                    }
-                });
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 60 && window.scrollY < sectionTop + sectionHeight - 60) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
 
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').includes(currentSection)) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-
-            // Listen for scroll events to update the active class
-            window.addEventListener('scroll', updateActiveLink);
-
-            // Add click event to smooth scroll and update active class
             navLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault(); // Prevent the default jump behavior
-                    isClicking = true; // Set the flag to prevent scroll from interfering
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(currentSection)) {
+                    link.classList.add('active');
+                }
+            });
+        }
 
-                    navLinks.forEach(navItem => navItem.classList.remove('active'));
-                    this.classList.add('active'); // Immediately add active class on click
+        // Listen for scroll events to update the active class
+        window.addEventListener('scroll', updateActiveLink);
 
-                    // Smooth scroll to the section
-                    const targetSection = document.querySelector(this.getAttribute('href'));
-                    if (targetSection) {
-                        targetSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+        // Add click event to smooth scroll and update active class
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default jump behavior
+                isClicking = true; // Set the flag to prevent scroll from interfering
 
-                    // Delay to allow scrolling to finish, then reset the click flag
-                    setTimeout(() => {
-                        isClicking = false;
-                    }, 800); // Adjust timeout to match the duration of smooth scrolling
-                });
+                navLinks.forEach(navItem => navItem.classList.remove('active'));
+                this.classList.add('active'); // Immediately add active class on click
+
+                // Smooth scroll to the section
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+
+                // Delay to allow scrolling to finish, then reset the click flag
+                setTimeout(() => {
+                    isClicking = false;
+                }, 800); // Adjust timeout to match the duration of smooth scrolling
             });
         });
+    });
 
-    </script>
+</script>
 
 
 {% endblock %}
