@@ -46,10 +46,10 @@ def contact_view(request):
             # Send the email
             send_mail(
                 subject,
-                '',  # Plain text message (this can be empty as we are sending HTML)
-                settings.DEFAULT_FROM_EMAIL,  # From email (sender)
-                [settings.EMAIL_HOST_USER],  # To email (recipient)
-                html_message=message,  # HTML message content
+                '',
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.EMAIL_HOST_USER],
+                html_message=message,
                 fail_silently=False,
             )
             return JsonResponse({'success': 'Your message has been sent!'})
